@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Step-by-step setup guide and 20 Canva UGC portfolio templates from Solae Studio Academy.">
+<link rel="icon" type="image/png" href="/UGC-Portfolio-Templates/img/logo-ss.png">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Solae Studio Academy Portfolio Templates</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;500&display=swap">
+<style>
+/* Layout: one centered column. Instructions read as a numbered ledger, then templates in collections, two-up cards with a swipeable page viewer. Single brown theme by design. */
+:root{
+  --brown:#2e231d; --brown-deep:#251c19; --cocoa:#3a2a23;
+  --creme:#e5e0d4; --gold:#c8b89e; --rule:#6b5645; --muted:#8a7a68;
+  --serif:'Playfair Display','Bodoni 72','Didot',Georgia,serif;
+  --display:'Anton','Bebas Neue',Impact,sans-serif; --ivory:#fbf3e8;
+  --sans:'Inter','Helvetica Neue',system-ui,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--brown);color:var(--creme);font-family:var(--sans);font-weight:300;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding-inline:clamp(16px,4vw,40px)}
+.eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin:0;font-weight:400}
+h1,h2,h3{font-weight:400;text-wrap:balance;margin:0}
+
+/* masthead */
+.mast{padding-block:40px 0}
+.mast .wrap{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap}
+.logo{display:flex;flex-direction:column;gap:4px;text-decoration:none}
+.logo img{display:block;width:clamp(170px,22vw,220px);height:auto}
+.logo span,.mast-r{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);line-height:1.6}
+.mast-r{text-align:right}
+
+/* hero */
+.hero{padding-block:clamp(56px,9vw,112px) clamp(40px,6vw,64px)}
+.kicker{display:inline-block;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--creme);padding-bottom:12px;margin:0 0 22px;border-bottom:.5px solid var(--gold)}
+.hero h1{font-family:var(--display);font-weight:400;text-transform:uppercase;color:var(--ivory);font-size:clamp(52px,13vw,168px);line-height:.92;letter-spacing:.005em}
+.hero .lede{font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.8vw,32px);line-height:1.35;color:var(--ivory);max-width:30ch;margin:36px 0 0}
+.inside{margin-top:44px}
+.inside .eyebrow{color:var(--muted);margin-bottom:14px}
+.inside ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px}
+.inside li{border-top:.5px solid var(--rule)}
+.inside li:nth-last-child(-n+2){border-bottom:.5px solid var(--rule)}
+.inside a{display:flex;align-items:baseline;gap:18px;padding-block:18px;text-decoration:none;color:var(--creme);transition:opacity .35s ease-out}
+.inside a:hover{opacity:.8}
+.inside a i{font-family:var(--serif);font-size:22px;color:var(--muted);min-width:36px}
+@media (max-width:620px){.mast-r{display:none}.inside ul{grid-template-columns:minmax(0,1fr)}.inside li:nth-last-child(2){border-bottom:0}}
+
+/* steps */
+.steps{padding-block:clamp(48px,7vw,88px);border-top:.5px solid var(--rule)}
+.sec-eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--creme);margin:0 0 6px}
+.sec-title{font-family:var(--display);font-weight:400;text-transform:uppercase;color:var(--ivory);font-size:clamp(48px,7.5vw,92px);line-height:.95}
+.sec-sub{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.4vw,28px);line-height:1.4;color:var(--ivory);max-width:34ch;margin:18px 0 0}
+.steps ol{list-style:none;margin:36px 0 0;padding:0;border-bottom:.5px solid var(--rule)}
+.steps li{display:grid;grid-template-columns:72px minmax(0,1fr);gap:12px;padding-block:22px;border-top:.5px solid var(--rule);scroll-margin-top:72px}
+.sn{font-family:var(--serif);font-style:italic;font-size:30px;color:var(--gold);line-height:1;padding-top:14px}
+.steps h3{font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--ivory);margin-bottom:8px}
+.sb{color:var(--creme);opacity:.86;max-width:68ch;font-size:15.5px}
+.sb ul{margin:8px 0;padding-left:0;list-style:none}
+.sb li{display:block;border:0;padding:3px 0 3px 16px;position:relative}
+.sb li::before{content:"";position:absolute;left:2px;top:.8em;width:4px;height:4px;border-radius:50%;background:var(--muted)}
+.sb strong{font-weight:500;color:var(--gold)}
+.sb a{color:var(--gold);text-underline-offset:3px}
+.note{margin-top:40px;padding:clamp(22px,3vw,32px);border:.5px solid var(--rule);background:var(--brown-deep)}
+.note .eyebrow{color:var(--creme);margin-bottom:10px}
+.note p.q{margin:0;font-family:var(--serif);font-style:italic;font-size:clamp(22px,2.6vw,30px);line-height:1.35;color:var(--ivory)}
+@media (max-width:520px){.steps li{grid-template-columns:44px minmax(0,1fr)}.sn{font-size:24px}}
+
+/* jump nav */
+.jump{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--brown);border-block:.5px solid var(--rule)}
+.jump .wrap{display:flex;gap:6px 28px;overflow-x:auto;padding-block:14px;scrollbar-width:none}
+.jump .wrap::-webkit-scrollbar{display:none}
+.jump a{white-space:nowrap;text-decoration:none;font-size:12px;letter-spacing:.16em;text-transform:uppercase;opacity:.85;transition:opacity .35s ease-out}
+.jump a:hover,.jump a:focus-visible{opacity:1;color:var(--gold)}
+.jump a span{color:var(--muted);margin-left:4px}
+.jump .lbl{color:var(--muted);font-size:11px;letter-spacing:.24em;text-transform:uppercase;white-space:nowrap}
+
+/* groups */
+.templates-intro{padding-block:clamp(48px,7vw,88px) 8px}
+.templates-intro{scroll-margin-top:0}
+.templates-intro h2{font-family:var(--display);font-weight:400;text-transform:uppercase;color:var(--ivory);font-size:clamp(48px,7.5vw,92px);line-height:.95}
+.templates-intro p.sub{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.4vw,28px);line-height:1.4;color:var(--ivory);max-width:34ch;opacity:1}
+.templates-intro p.sub{max-width:560px;margin:16px 0 0;opacity:.86}
+.group{padding-block:clamp(40px,6vw,72px);scroll-margin-top:56px}
+.ghead{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 20px;padding-bottom:20px;margin-bottom:28px;border-bottom:.5px solid var(--rule)}
+.ghead .eyebrow{flex-basis:100%}
+.ghead h2{font-family:var(--serif);font-size:clamp(28px,3.6vw,38px);line-height:1.1}
+.gdesc{margin:0;color:var(--muted);font-size:15px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px 32px}
+@media (max-width:760px){.grid{grid-template-columns:minmax(0,1fr);gap:44px}.steps-head{grid-template-columns:minmax(0,1fr)}}
+
+/* card + slideshow */
+.tpl{min-width:0}
+.show{position:relative;background:var(--brown-deep);border:.5px solid var(--rule);border-radius:2px;overflow:hidden}
+.track{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;aspect-ratio:16/9;max-width:100%;outline:none}
+.track::-webkit-scrollbar{display:none}
+.track img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start;display:block}
+.track:focus-visible{box-shadow:inset 0 0 0 1px var(--gold)}
+.nav{position:absolute;top:50%;transform:translateY(-50%);width:40px;height:40px;border-radius:2px;border:.5px solid rgba(229,224,212,.5);background:rgba(37,28,25,.62);color:var(--creme);font-family:var(--serif);font-size:26px;line-height:1;cursor:pointer;opacity:.85;transition:opacity .35s ease-out}
+.nav:hover,.nav:focus-visible{opacity:1;outline:none;border-color:var(--gold)}
+.nav[disabled]{opacity:0;pointer-events:none}
+.prev{left:10px}.next{right:10px}
+.count{position:absolute;right:10px;bottom:10px;padding:3px 9px;background:rgba(37,28,25,.72);font-size:11px;letter-spacing:.14em;font-variant-numeric:tabular-nums;border-radius:2px}
+.dots{display:flex;gap:6px;justify-content:center;padding-top:12px}
+.dots i{width:18px;height:1px;background:var(--rule);transition:background .35s ease-out}
+.dots i.on{background:var(--gold)}
+.meta{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:start;gap:14px;padding-top:14px}
+.num{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--gold);line-height:1.2}
+.meta h3{font-family:var(--serif);font-size:24px;line-height:1.2}
+.meta h3 a{text-decoration:none;transition:opacity .35s ease-out}
+.meta h3 a:hover{opacity:.8;text-decoration:underline;text-decoration-thickness:.5px;text-underline-offset:5px}
+.meta p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.use{align-self:center;white-space:nowrap;text-decoration:none;font-size:12px;letter-spacing:.15em;text-transform:uppercase;font-weight:400;padding:11px 18px;border:1px solid var(--gold);border-radius:2px;color:var(--creme);transition:background .35s ease-out,color .35s ease-out}
+.use em{font-family:var(--serif);font-style:italic;text-transform:none;letter-spacing:0;font-size:15px}
+.use:hover,.use:focus-visible{background:var(--gold);color:var(--brown);outline:none}
+@media (max-width:460px){.meta{grid-template-columns:auto minmax(0,1fr)}.use{grid-column:1/-1;text-align:center}}
+
+footer{border-top:.5px solid var(--rule);padding-block:48px 64px;margin-top:24px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:baseline}
+footer .q{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--gold);margin:0}
+footer .fr{display:flex;align-items:center;gap:20px}
+footer .fr img{width:44px;height:auto;display:block}
+footer small{color:var(--muted);font-size:11px;letter-spacing:.24em;text-transform:uppercase}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+</head>
+<body>
+<header class="mast"><div class="wrap">
+  <div class="logo"><img src="/UGC-Portfolio-Templates/img/logo-wordmark.png" alt="Solae Studio" width="220"><span>Academy</span></div>
+  <div class="mast-r">Creator resource<br>Portfolio templates</div>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <p class="kicker">Portfolio template guide</p>
+  <h1>UGC<br>Portfolio<br>Templates</h1>
+  <p class="lede">Your portfolio is the first thing you need to land brand deals. Follow the steps below and personalize the templates to create a custom portfolio website to send to brands.</p>
+  <nav class="inside" aria-label="Inside this guide">
+    <p class="eyebrow">Inside</p>
+    <ul>
+      <li><a href="#how"><i>01.</i>How it works</a></li>
+      <li><a href="#templates"><i>02.</i>Pick your template</a></li>
+      <li><a href="#step-10"><i>03.</i>Make it your own</a></li>
+      <li><a href="#step-11"><i>04.</i>Publish your site</a></li>
+    </ul>
+  </nav>
+</div></section>
+
+<section class="steps" id="how"><div class="wrap">
+  <p class="sec-eyebrow">01 &middot; How it works</p>
+  <h2 class="sec-title">Build your portfolio</h2>
+  <p class="sec-sub">From blank template to a live portfolio you can send to brands.</p>
+  <ol><li id="step-1"><span class="sn">01.</span><div><h3>Pick your template</h3><div class="sb">Scroll through the 20 templates below and choose the one that matches your style. Every template has the exact same pages and content. The only difference is the look. Options range from minimalist and editorial to trendy, bold, and colorful. Click through each slideshow to see every page before you decide.</div></div></li><li id="step-2"><span class="sn">02.</span><div><h3>Make a Canva account</h3><div class="sb">Sign up at <a href="https://www.canva.com" target="_blank" rel="noopener">canva.com</a>. The free plan has everything you need. Canva Pro adds extra features if you want them, but it is not required.</div></div></li><li id="step-3"><span class="sn">03.</span><div><h3>Open your template</h3><div class="sb">Click the name of the template you picked. Canva will create your own private copy to edit. Your changes won't affect anyone else's.</div></div></li><li id="step-4"><span class="sn">04.</span><div><h3>Add your information</h3><div class="sb">Go page by page and replace the placeholder text with your own details. Before you start, have these ready:<ul><li>The niches you want to create content for</li><li>Links to all your social media pages</li><li>How brands can contact you</li></ul></div></div></li><li id="step-5"><span class="sn">05.</span><div><h3>Write your About Me page</h3><div class="sb">Tell brands who you are, what you create, and why they should work with you. Keep it short and specific.</div></div></li><li id="step-6"><span class="sn">06.</span><div><h3>Add your photos</h3><div class="sb">Replace every placeholder image with photos of you.</div></div></li><li id="step-7"><span class="sn">07.</span><div><h3>Film your eight videos</h3><div class="sb">Your portfolio has two video pages with four blank spots each.<ul><li><strong>First video page:</strong> four Canvas style videos</li><li><strong>Second video page:</strong> four traditional style videos</li></ul>Use the Solae Academy content bank for ideas and examples of each style.</div></div></li><li id="step-8"><span class="sn">08.</span><div><h3>Turn off autoplay</h3><div class="sb">After you upload each video, click on it and turn autoplay off. This keeps the page clean and lets brands choose what to watch.</div></div></li><li id="step-9"><span class="sn">09.</span><div><h3>Fill in the optional page</h3><div class="sb">If you have metrics, analytics, reviews, or past clients, add them to the optional page. If you are just starting out, skip it for now and update it as you grow.</div></div></li><li id="step-10"><span class="sn">10.</span><div><h3>Make it yours</h3><div class="sb">Adjust the colors, fonts, and details until the portfolio feels like you. The template is a starting point, not a rule.</div></div></li><li id="step-11"><span class="sn">11.</span><div><h3>Publish it as a website</h3><div class="sb">Once everything is filled in and finalized, click <strong>Publish website</strong> in Canva. You'll get a link you can send to any brand.</div></div></li></ol>
+  <div class="note"><p class="eyebrow">That's it</p><p class="q">You now have a professional portfolio ready to start landing brand deals.</p></div>
+</div></section>
+
+<div class="templates-intro" id="templates"><div class="wrap">
+  <p class="sec-eyebrow">02 &middot; Choose your aesthetic</p>
+  <h2>Pick your template</h2>
+  <p class="sub">Every template has the same content. The only difference is the aesthetic design. Swipe or use the arrows to see every page, then click a template's name to open your own copy in Canva.</p>
+</div></div>
+
+<nav class="jump" aria-label="Collections"><div class="wrap"><span class="lbl">Jump to</span><a href="#g1">Soft neutrals <span>4</span></a><a href="#g2">Earth tones <span>4</span></a><a href="#g3">Pink <span>5</span></a><a href="#g4">Black, white, and grey <span>3</span></a><a href="#g5">Bold color <span>4</span></a></div></nav>
+
+<div class="wrap"><section class="group" id="g1">
+  <header class="ghead"><p class="eyebrow">Collection 01</p><h2>Soft neutrals</h2><p class="gdesc">Quiet, airy, and easy on the eyes.</p></header>
+  <div class="grid"><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Beige Feminine Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/beige-feminine-portfolio-1.webp" alt="Beige Feminine Portfolio, page 1 of 6" width="1280" height="720" decoding="async"><img src="/UGC-Portfolio-Templates/img/beige-feminine-portfolio-2.webp" alt="Beige Feminine Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/beige-feminine-portfolio-3.webp" alt="Beige Feminine Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/beige-feminine-portfolio-4.webp" alt="Beige Feminine Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/beige-feminine-portfolio-5.webp" alt="Beige Feminine Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/beige-feminine-portfolio-6.webp" alt="Beige Feminine Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">01</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/gwf6mh3nak322i5" target="_blank" rel="noopener">Beige Feminine Portfolio</a></h3>
+      <p>Soft, floral, airy</p>
+    </div>
+    <a class="use" href="https://canva.link/gwf6mh3nak322i5" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Beige Modern Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/beige-modern-portfolio-1.webp" alt="Beige Modern Portfolio, page 1 of 6" width="1280" height="720" decoding="async"><img src="/UGC-Portfolio-Templates/img/beige-modern-portfolio-2.webp" alt="Beige Modern Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/beige-modern-portfolio-3.webp" alt="Beige Modern Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/beige-modern-portfolio-4.webp" alt="Beige Modern Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/beige-modern-portfolio-5.webp" alt="Beige Modern Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/beige-modern-portfolio-6.webp" alt="Beige Modern Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">02</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/30u7qsi1zxsa212" target="_blank" rel="noopener">Beige Modern Portfolio</a></h3>
+      <p>Clean, cozy, neutral</p>
+    </div>
+    <a class="use" href="https://canva.link/30u7qsi1zxsa212" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Neutral Modern Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/neutral-modern-portfolio-1.webp" alt="Neutral Modern Portfolio, page 1 of 6" width="1280" height="720" decoding="async"><img src="/UGC-Portfolio-Templates/img/neutral-modern-portfolio-2.webp" alt="Neutral Modern Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neutral-modern-portfolio-3.webp" alt="Neutral Modern Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neutral-modern-portfolio-4.webp" alt="Neutral Modern Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neutral-modern-portfolio-5.webp" alt="Neutral Modern Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neutral-modern-portfolio-6.webp" alt="Neutral Modern Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">03</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/ni0dm5rmc326iwo" target="_blank" rel="noopener">Neutral Modern Portfolio</a></h3>
+      <p>Big type over full-bleed photos</p>
+    </div>
+    <a class="use" href="https://canva.link/ni0dm5rmc326iwo" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Neutral Editorial Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/neutral-editorial-portfolio-1.webp" alt="Neutral Editorial Portfolio, page 1 of 6" width="1280" height="720" decoding="async"><img src="/UGC-Portfolio-Templates/img/neutral-editorial-portfolio-2.webp" alt="Neutral Editorial Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neutral-editorial-portfolio-3.webp" alt="Neutral Editorial Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neutral-editorial-portfolio-4.webp" alt="Neutral Editorial Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neutral-editorial-portfolio-5.webp" alt="Neutral Editorial Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neutral-editorial-portfolio-6.webp" alt="Neutral Editorial Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">04</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/p3pspvqbcqdcihq" target="_blank" rel="noopener">Neutral Editorial Portfolio</a></h3>
+      <p>Magazine layout, condensed headlines</p>
+    </div>
+    <a class="use" href="https://canva.link/p3pspvqbcqdcihq" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article></div>
+</section><section class="group" id="g2">
+  <header class="ghead"><p class="eyebrow">Collection 02</p><h2>Earth tones</h2><p class="gdesc">Olive, chocolate, and warm brown.</p></header>
+  <div class="grid"><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Green Modern Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/green-modern-portfolio-1.webp" alt="Green Modern Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-modern-portfolio-2.webp" alt="Green Modern Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-modern-portfolio-3.webp" alt="Green Modern Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-modern-portfolio-4.webp" alt="Green Modern Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-modern-portfolio-5.webp" alt="Green Modern Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-modern-portfolio-6.webp" alt="Green Modern Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">05</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/laeokk53x9oemu5" target="_blank" rel="noopener">Green Modern Portfolio</a></h3>
+      <p>Sage and olive, structured grid</p>
+    </div>
+    <a class="use" href="https://canva.link/laeokk53x9oemu5" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="7">
+    <div class="track" tabindex="0" aria-label="Green Scrapbook Portfolio preview, 7 pages"><img src="/UGC-Portfolio-Templates/img/green-scrapbook-portfolio-1.webp" alt="Green Scrapbook Portfolio, page 1 of 7" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-scrapbook-portfolio-2.webp" alt="Green Scrapbook Portfolio, page 2 of 7" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-scrapbook-portfolio-3.webp" alt="Green Scrapbook Portfolio, page 3 of 7" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-scrapbook-portfolio-4.webp" alt="Green Scrapbook Portfolio, page 4 of 7" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-scrapbook-portfolio-5.webp" alt="Green Scrapbook Portfolio, page 5 of 7" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-scrapbook-portfolio-6.webp" alt="Green Scrapbook Portfolio, page 6 of 7" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/green-scrapbook-portfolio-7.webp" alt="Green Scrapbook Portfolio, page 7 of 7" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 7</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">06</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/a9aq9alfw6s0jn8" target="_blank" rel="noopener">Green Scrapbook Portfolio</a></h3>
+      <p>Collage, film strips, handwritten type</p>
+    </div>
+    <a class="use" href="https://canva.link/a9aq9alfw6s0jn8" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Brown Trendy Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/brown-trendy-portfolio-1.webp" alt="Brown Trendy Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/brown-trendy-portfolio-2.webp" alt="Brown Trendy Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/brown-trendy-portfolio-3.webp" alt="Brown Trendy Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/brown-trendy-portfolio-4.webp" alt="Brown Trendy Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/brown-trendy-portfolio-5.webp" alt="Brown Trendy Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/brown-trendy-portfolio-6.webp" alt="Brown Trendy Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">07</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/smrm3ci8v9bmkk6" target="_blank" rel="noopener">Brown Trendy Portfolio</a></h3>
+      <p>Layered photos, folders and clips</p>
+    </div>
+    <a class="use" href="https://canva.link/smrm3ci8v9bmkk6" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Brown and Pastel Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/brown-and-pastel-portfolio-1.webp" alt="Brown and Pastel Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/brown-and-pastel-portfolio-2.webp" alt="Brown and Pastel Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/brown-and-pastel-portfolio-3.webp" alt="Brown and Pastel Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/brown-and-pastel-portfolio-4.webp" alt="Brown and Pastel Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/brown-and-pastel-portfolio-5.webp" alt="Brown and Pastel Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/brown-and-pastel-portfolio-6.webp" alt="Brown and Pastel Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">08</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/5b121cpcpyjujvi" target="_blank" rel="noopener">Brown and Pastel Portfolio</a></h3>
+      <p>Chocolate brown with soft pink type</p>
+    </div>
+    <a class="use" href="https://canva.link/5b121cpcpyjujvi" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article></div>
+</section><section class="group" id="g3">
+  <header class="ghead"><p class="eyebrow">Collection 03</p><h2>Pink</h2><p class="gdesc">From barely-there blush to full scrapbook.</p></header>
+  <div class="grid"><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Pink Minimalist Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/pink-minimalist-portfolio-1.webp" alt="Pink Minimalist Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-minimalist-portfolio-2.webp" alt="Pink Minimalist Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-minimalist-portfolio-3.webp" alt="Pink Minimalist Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-minimalist-portfolio-4.webp" alt="Pink Minimalist Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-minimalist-portfolio-5.webp" alt="Pink Minimalist Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-minimalist-portfolio-6.webp" alt="Pink Minimalist Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">09</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/l27a4cxnimxbscm" target="_blank" rel="noopener">Pink Minimalist Portfolio</a></h3>
+      <p>Blush tones, lots of space</p>
+    </div>
+    <a class="use" href="https://canva.link/l27a4cxnimxbscm" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Pink Playful Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/pink-playful-portfolio-1.webp" alt="Pink Playful Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-playful-portfolio-2.webp" alt="Pink Playful Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-playful-portfolio-3.webp" alt="Pink Playful Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-playful-portfolio-4.webp" alt="Pink Playful Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-playful-portfolio-5.webp" alt="Pink Playful Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-playful-portfolio-6.webp" alt="Pink Playful Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">10</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/fnlrpsbx7q9dthe" target="_blank" rel="noopener">Pink Playful Portfolio</a></h3>
+      <p>Hand-drawn script, fun and light</p>
+    </div>
+    <a class="use" href="https://canva.link/fnlrpsbx7q9dthe" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Pink Scrapbook Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/pink-scrapbook-portfolio-1.webp" alt="Pink Scrapbook Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-scrapbook-portfolio-2.webp" alt="Pink Scrapbook Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-scrapbook-portfolio-3.webp" alt="Pink Scrapbook Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-scrapbook-portfolio-4.webp" alt="Pink Scrapbook Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-scrapbook-portfolio-5.webp" alt="Pink Scrapbook Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-scrapbook-portfolio-6.webp" alt="Pink Scrapbook Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">11</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/jq7panuzy5i9oda" target="_blank" rel="noopener">Pink Scrapbook Portfolio</a></h3>
+      <p>Collage, stickers, notes</p>
+    </div>
+    <a class="use" href="https://canva.link/jq7panuzy5i9oda" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Pink Feminine Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/pink-feminine-portfolio-1.webp" alt="Pink Feminine Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-feminine-portfolio-2.webp" alt="Pink Feminine Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-feminine-portfolio-3.webp" alt="Pink Feminine Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-feminine-portfolio-4.webp" alt="Pink Feminine Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-feminine-portfolio-5.webp" alt="Pink Feminine Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-feminine-portfolio-6.webp" alt="Pink Feminine Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">12</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/g7mith9tq5s7wjn" target="_blank" rel="noopener">Pink Feminine Portfolio</a></h3>
+      <p>Romantic script and polka dots</p>
+    </div>
+    <a class="use" href="https://canva.link/g7mith9tq5s7wjn" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Pink Editorial Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/pink-editorial-portfolio-1.webp" alt="Pink Editorial Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-editorial-portfolio-2.webp" alt="Pink Editorial Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-editorial-portfolio-3.webp" alt="Pink Editorial Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-editorial-portfolio-4.webp" alt="Pink Editorial Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-editorial-portfolio-5.webp" alt="Pink Editorial Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/pink-editorial-portfolio-6.webp" alt="Pink Editorial Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">13</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/nm8grx90mb612e3" target="_blank" rel="noopener">Pink Editorial Portfolio</a></h3>
+      <p>Black and white photos, pink headlines</p>
+    </div>
+    <a class="use" href="https://canva.link/nm8grx90mb612e3" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article></div>
+</section><section class="group" id="g4">
+  <header class="ghead"><p class="eyebrow">Collection 04</p><h2>Black, white, and grey</h2><p class="gdesc">High contrast and editorial.</p></header>
+  <div class="grid"><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Greyscale Modern Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/greyscale-modern-portfolio-1.webp" alt="Greyscale Modern Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/greyscale-modern-portfolio-2.webp" alt="Greyscale Modern Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/greyscale-modern-portfolio-3.webp" alt="Greyscale Modern Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/greyscale-modern-portfolio-4.webp" alt="Greyscale Modern Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/greyscale-modern-portfolio-5.webp" alt="Greyscale Modern Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/greyscale-modern-portfolio-6.webp" alt="Greyscale Modern Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">14</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/aygbqx6n97h0sqx" target="_blank" rel="noopener">Greyscale Modern Portfolio</a></h3>
+      <p>Grey texture with a pink accent</p>
+    </div>
+    <a class="use" href="https://canva.link/aygbqx6n97h0sqx" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Black and White Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/black-and-white-portfolio-1.webp" alt="Black and White Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/black-and-white-portfolio-2.webp" alt="Black and White Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/black-and-white-portfolio-3.webp" alt="Black and White Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/black-and-white-portfolio-4.webp" alt="Black and White Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/black-and-white-portfolio-5.webp" alt="Black and White Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/black-and-white-portfolio-6.webp" alt="Black and White Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">15</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/odslf4ynf881g6h" target="_blank" rel="noopener">Black and White Portfolio</a></h3>
+      <p>High-contrast fashion editorial</p>
+    </div>
+    <a class="use" href="https://canva.link/odslf4ynf881g6h" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Black Minimalist Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/black-minimalist-portfolio-1.webp" alt="Black Minimalist Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/black-minimalist-portfolio-2.webp" alt="Black Minimalist Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/black-minimalist-portfolio-3.webp" alt="Black Minimalist Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/black-minimalist-portfolio-4.webp" alt="Black Minimalist Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/black-minimalist-portfolio-5.webp" alt="Black Minimalist Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/black-minimalist-portfolio-6.webp" alt="Black Minimalist Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">16</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/ry7rn63m5srdd1r" target="_blank" rel="noopener">Black Minimalist Portfolio</a></h3>
+      <p>Dark, sleek, oversized type</p>
+    </div>
+    <a class="use" href="https://canva.link/ry7rn63m5srdd1r" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article></div>
+</section><section class="group" id="g5">
+  <header class="ghead"><p class="eyebrow">Collection 05</p><h2>Bold color</h2><p class="gdesc">Loud, dramatic, and made to stand out.</p></header>
+  <div class="grid"><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Neon Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/neon-portfolio-1.webp" alt="Neon Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neon-portfolio-2.webp" alt="Neon Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neon-portfolio-3.webp" alt="Neon Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neon-portfolio-4.webp" alt="Neon Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neon-portfolio-5.webp" alt="Neon Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/neon-portfolio-6.webp" alt="Neon Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">17</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/qtgaw02c3hqs575" target="_blank" rel="noopener">Neon Portfolio</a></h3>
+      <p>Glowing type, night-out energy</p>
+    </div>
+    <a class="use" href="https://canva.link/qtgaw02c3hqs575" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Red and Black Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/red-and-black-portfolio-1.webp" alt="Red and Black Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/red-and-black-portfolio-2.webp" alt="Red and Black Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/red-and-black-portfolio-3.webp" alt="Red and Black Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/red-and-black-portfolio-4.webp" alt="Red and Black Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/red-and-black-portfolio-5.webp" alt="Red and Black Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/red-and-black-portfolio-6.webp" alt="Red and Black Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">18</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/aj9m5c14ivum11d" target="_blank" rel="noopener">Red and Black Portfolio</a></h3>
+      <p>Motion blur and high drama</p>
+    </div>
+    <a class="use" href="https://canva.link/aj9m5c14ivum11d" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Red Scrapbook Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/red-scrapbook-portfolio-1.webp" alt="Red Scrapbook Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/red-scrapbook-portfolio-2.webp" alt="Red Scrapbook Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/red-scrapbook-portfolio-3.webp" alt="Red Scrapbook Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/red-scrapbook-portfolio-4.webp" alt="Red Scrapbook Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/red-scrapbook-portfolio-5.webp" alt="Red Scrapbook Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/red-scrapbook-portfolio-6.webp" alt="Red Scrapbook Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">19</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/ocyjnf1qvijkcco" target="_blank" rel="noopener">Red Scrapbook Portfolio</a></h3>
+      <p>File folder and polaroid</p>
+    </div>
+    <a class="use" href="https://canva.link/ocyjnf1qvijkcco" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article><article class="tpl">
+  <div class="show" data-count="6">
+    <div class="track" tabindex="0" aria-label="Trendy Burgundy Portfolio preview, 6 pages"><img src="/UGC-Portfolio-Templates/img/trendy-burgundy-portfolio-1.webp" alt="Trendy Burgundy Portfolio, page 1 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/trendy-burgundy-portfolio-2.webp" alt="Trendy Burgundy Portfolio, page 2 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/trendy-burgundy-portfolio-3.webp" alt="Trendy Burgundy Portfolio, page 3 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/trendy-burgundy-portfolio-4.webp" alt="Trendy Burgundy Portfolio, page 4 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/trendy-burgundy-portfolio-5.webp" alt="Trendy Burgundy Portfolio, page 5 of 6" width="1280" height="720" loading="lazy" decoding="async"><img src="/UGC-Portfolio-Templates/img/trendy-burgundy-portfolio-6.webp" alt="Trendy Burgundy Portfolio, page 6 of 6" width="1280" height="720" loading="lazy" decoding="async"></div>
+    <button class="nav prev" type="button" aria-label="Previous page">&#8249;</button>
+    <button class="nav next" type="button" aria-label="Next page">&#8250;</button>
+    <div class="count"><span class="cur">1</span> / 6</div>
+  </div>
+  <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="meta">
+    <span class="num">20</span>
+    <div class="txt">
+      <h3><a href="https://canva.link/zb185gg4y2vmxno" target="_blank" rel="noopener">Trendy Burgundy Portfolio</a></h3>
+      <p>Notebook binding and cowhide texture</p>
+    </div>
+    <a class="use" href="https://canva.link/zb185gg4y2vmxno" target="_blank" rel="noopener">Use template <em>&rarr;</em></a>
+  </div>
+</article></div>
+</section></div>
+</main>
+
+<footer><div class="wrap"><p class="q">Portfolio Templates</p><div class="fr"><small>Solae Studio Academy</small><img src="/UGC-Portfolio-Templates/img/logo-ss.png" alt="" width="44"></div></div></footer>
+
+<script>
+document.querySelectorAll('.show').forEach(function(show){
+  var track=show.querySelector('.track'), prev=show.querySelector('.prev'), next=show.querySelector('.next');
+  var cur=show.querySelector('.cur'), dots=show.nextElementSibling.querySelectorAll('i');
+  var n=+show.dataset.count;
+  function idx(){return Math.round(track.scrollLeft/Math.max(1,track.clientWidth));}
+  function update(){
+    var i=Math.min(n-1,Math.max(0,idx()));
+    cur.textContent=i+1; prev.disabled=i===0; next.disabled=i===n-1;
+    dots.forEach(function(d,k){d.classList.toggle('on',k===i);});
+  }
+  function go(d){track.scrollTo({left:(idx()+d)*track.clientWidth});}
+  prev.addEventListener('click',function(){go(-1);});
+  next.addEventListener('click',function(){go(1);});
+  track.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){e.preventDefault();go(1);}if(e.key==='ArrowLeft'){e.preventDefault();go(-1);}});
+  var t;track.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(update,60);},{passive:true});
+  update();
+});
+</script>
+
+</body>
+</html>
