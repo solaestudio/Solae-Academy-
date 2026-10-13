@@ -1,6 +1,20 @@
 {
   "rewrites": [
-    { "source": "/UGC-Portfolio-Templates", "destination": "/UGC-Portfolio-Templates/index.html" },
-    { "source": "/UGC-Portfolio-Templates/", "destination": "/UGC-Portfolio-Templates/index.html" }
+    {
+      "source": "/UGC-Portfolio-Templates",
+      "destination": "/UGC-Portfolio-Templates/index.html"
+    },
+    {
+      "source": "/UGC-Portfolio-Templates/",
+      "destination": "/UGC-Portfolio-Templates/index.html"
+    },
+    {
+      "source": "/UGC-Content-Bank",
+      "destination": "/UGC-Content-Bank/index.html"
+    },
+    {
+      "source": "/UGC-Content-Bank/",
+      "destination": "/UGC-Content-Bank/index.html"
+    }
   ]
 }

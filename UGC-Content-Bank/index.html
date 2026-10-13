@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Real campaign and brand-deal UGC examples to recreate for your portfolio, from Solae Studio Academy.">
+<link rel="icon" type="image/png" href="/UGC-Content-Bank/img/logo-ss.png">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<title>Solae Studio Academy Content Bank</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap">
+<style>
+/* Layout: Solae Academy resource page. Single dark espresso world, oversized condensed display type,
+   italic serif ledes, letter-spaced eyebrow labels, hairline-ruled rows. Single-theme by design. */
+:root{
+  --bg:#2d241f;
+  --bg-raised:#352b25;
+  --cream:#fbf3e9;
+  --muted:#b3a89b;
+  --faint:#857a6e;
+  --tan:#c9b896;
+  --rule:rgba(251,243,233,.16);
+  --rule-strong:rgba(251,243,233,.32);
+  --display:"Anton","Oswald","Arial Narrow",Impact,sans-serif;
+  --serif:"Playfair Display",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--cream);font-family:var(--sans);font-size:17px;line-height:1.65;font-weight:300;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible{outline:2px solid var(--tan);outline-offset:3px}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:clamp(16px,4vw,48px)}
+
+/* masthead */
+.mast{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding-block:40px 0;flex-wrap:wrap}
+.brand{display:flex;flex-direction:column;gap:10px;text-decoration:none}
+.brand img{width:clamp(180px,22vw,300px);height:auto;display:block}
+.eyebrow,.brand span{font-family:var(--sans);font-size:12px;letter-spacing:.32em;text-transform:uppercase;font-weight:400}
+.brand span{color:var(--faint)}
+.mast-meta{text-align:right;color:var(--faint);font-size:12px;letter-spacing:.28em;text-transform:uppercase;line-height:2}
+
+/* hero */
+.hero{padding-block:clamp(72px,12vw,150px) clamp(64px,9vw,110px)}
+.hero .eyebrow{display:inline-block;padding-bottom:18px;border-bottom:1px solid var(--rule-strong);margin-bottom:clamp(24px,4vw,40px)}
+h1{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(64px,15vw,200px);line-height:.9;letter-spacing:-.005em;margin:0;text-wrap:balance}
+.lede{font-family:var(--serif);font-style:italic;font-size:clamp(24px,3.2vw,40px);line-height:1.35;max-width:22ch;margin:clamp(28px,4vw,48px) 0 0;text-wrap:pretty}
+.lede.wide{max-width:30ch}
+
+/* sections */
+section{padding-block:clamp(56px,8vw,96px);border-top:1px solid var(--rule)}
+.kicker{color:var(--muted);margin:0 0 6px}
+h2{font-family:var(--display);font-weight:400;text-transform:uppercase;font-size:clamp(48px,9vw,112px);line-height:.95;margin:0;text-wrap:balance}
+.sub{font-family:var(--serif);font-style:italic;font-size:clamp(21px,2.6vw,32px);line-height:1.35;max-width:32ch;margin:20px 0 0;color:var(--cream)}
+p{max-width:65ch}
+.body-copy{color:var(--muted);font-size:17px;margin:24px 0 0}
+strong{font-weight:500;color:var(--cream)}
+
+/* ruled step rows */
+.steps{list-style:none;margin:clamp(36px,5vw,56px) 0 0;padding:0;border-top:1px solid var(--rule)}
+.steps li{display:grid;grid-template-columns:clamp(56px,9vw,126px) minmax(0,1fr);gap:16px;padding-block:30px;border-bottom:1px solid var(--rule)}
+.num{font-family:var(--serif);font-style:italic;font-size:clamp(28px,3.4vw,40px);line-height:1;color:var(--tan)}
+.steps h3{font-family:var(--sans);font-weight:500;font-size:13px;letter-spacing:.28em;text-transform:uppercase;margin:4px 0 10px}
+.steps p{margin:0;color:var(--muted)}
+.steps p strong{color:var(--cream)}
+.steps a{color:var(--cream);text-decoration:underline;text-decoration-color:var(--tan);text-underline-offset:4px}
+
+/* two-up info */
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:0 48px;margin-top:clamp(36px,5vw,56px)}
+.block{border-top:1px solid var(--rule);padding-block:26px}
+.block h3{font-family:var(--sans);font-weight:500;font-size:13px;letter-spacing:.28em;text-transform:uppercase;margin:0 0 12px}
+.block p{margin:0;color:var(--muted)}
+
+/* rule callout */
+.rule-note{margin-top:clamp(36px,5vw,56px);padding:28px clamp(20px,3vw,36px);background:var(--bg-raised);border-left:2px solid var(--tan);max-width:780px}
+.rule-note .eyebrow{color:var(--tan);display:block;margin-bottom:10px}
+.rule-note p{margin:0;color:var(--muted)}
+
+/* checklists */
+.checks{list-style:none;margin:0;padding:0}
+.checks li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:14px;padding-block:14px;border-bottom:1px solid var(--rule);color:var(--muted)}
+.checks li::before{content:"";width:14px;height:14px;border:1px solid var(--tan);margin-top:6px}
+.check-group h3{margin:0 0 6px}
+
+/* jump bar */
+.jump{display:flex;flex-wrap:wrap;align-items:center;gap:10px 34px;margin-top:clamp(36px,5vw,56px);padding-block:22px;border-block:1px solid var(--rule);font-size:13px;letter-spacing:.22em;text-transform:uppercase}
+.jump span{color:var(--faint)}
+.jump a{text-decoration:none;color:var(--cream)}
+.jump a:hover{color:var(--tan)}
+.jump b{font-weight:400;color:var(--faint);margin-left:8px}
+
+/* collections */
+.collection{padding-top:clamp(56px,7vw,84px)}
+.coll-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 26px;padding-bottom:20px;border-bottom:1px solid var(--rule-strong)}
+.coll-head .eyebrow{flex-basis:100%;color:var(--muted)}
+.coll-head h3{font-family:var(--serif);font-weight:400;font-size:clamp(36px,5vw,60px);line-height:1.05;margin:0}
+.coll-head p{margin:0;color:var(--muted);font-size:17px;max-width:52ch}
+
+.videos{list-style:none;margin:0;padding:0}
+.videos li{border-bottom:1px solid var(--rule)}
+.vrow{display:grid;grid-template-columns:44px minmax(0,1fr) auto;align-items:center;gap:16px;padding-block:20px;text-decoration:none;transition:background .2s,padding .2s}
+.vrow:hover{background:var(--bg-raised);padding-inline:12px}
+@media (prefers-reduced-motion:reduce){.vrow{transition:none}}
+.vrow .i{font-family:var(--serif);font-style:italic;color:var(--tan);font-size:20px;font-variant-numeric:tabular-nums}
+.vrow .t{font-size:clamp(17px,1.8vw,20px);font-weight:400;color:var(--cream)}
+.vrow .go{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
+.vrow:hover .go{color:var(--tan)}
+.tag{display:inline-block;margin-left:12px;padding:3px 10px;border:1px solid var(--rule-strong);border-radius:999px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);vertical-align:middle;white-space:nowrap}
+
+/* green screen rows with collateral */
+.gs-row{display:grid;grid-template-columns:44px minmax(0,1fr) auto auto;align-items:center;gap:16px 28px;padding-block:20px;border-bottom:1px solid var(--rule)}
+.gs-row .i{font-family:var(--serif);font-style:italic;color:var(--tan);font-size:20px}
+.gs-row .t{font-size:clamp(17px,1.8vw,20px);color:var(--cream)}
+.gs-row a.lnk{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);text-decoration:none;white-space:nowrap;border-bottom:1px solid var(--rule-strong);padding-bottom:2px}
+.gs-row a.lnk:hover{color:var(--tan);border-color:var(--tan)}
+
+.subhead{font-family:var(--serif);font-weight:400;font-size:clamp(28px,3.2vw,40px);line-height:1.1;margin:clamp(40px,5vw,64px) 0 0}
+.points{list-style:none;margin:20px 0 0;padding:0;border-top:1px solid var(--rule)}
+.points li{padding-block:18px;border-bottom:1px solid var(--rule);color:var(--muted);max-width:820px}
+
+/* footer CTA */
+.cta{padding-block:clamp(72px,10vw,130px);border-top:1px solid var(--rule)}
+.cta .btn{display:inline-flex;align-items:center;gap:14px;margin-top:36px;padding:18px 30px;border:1px solid var(--cream);text-decoration:none;font-size:13px;letter-spacing:.28em;text-transform:uppercase;transition:background .2s,color .2s}
+.cta .btn:hover{background:var(--cream);color:var(--bg)}
+footer{display:flex;flex-direction:column;align-items:center;gap:18px;padding-block:56px 72px;border-top:1px solid var(--rule)}
+footer img{width:72px;height:auto;opacity:.9}
+footer span{font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--faint)}
+
+@media (max-width:640px){
+  body{font-size:16px}
+  .mast-meta{text-align:left}
+  .vrow{grid-template-columns:32px minmax(0,1fr)}
+  .vrow .go{grid-column:2}
+  .tag{margin:8px 0 0;display:inline-block}
+  .vrow .t .tag{display:table;margin-left:0}
+  .gs-row{grid-template-columns:32px minmax(0,1fr)}
+  .gs-row a.lnk{grid-column:2;justify-self:start}
+  .vrow:hover{padding-inline:0}
+}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="mast">
+    <a class="brand" href="https://academy.solaestudio.com" aria-label="Solae Studio Academy">
+      <img src="/UGC-Content-Bank/img/logo-wordmark.png" alt="Solae Studio">
+      <span>Academy</span>
+    </a>
+    <div class="mast-meta">Creator Resource<br>UGC Content Bank</div>
+  </header>
+
+  <div class="hero">
+    <span class="eyebrow">Content Bank Guide</span>
+    <h1>UGC<br>Content<br>Bank</h1>
+    <p class="lede">Every example in here is from a real campaign or brand deal. Recreate 8 of them to build a portfolio that looks like real industry work.</p>
+  </div>
+
+  <!-- 01 -->
+  <section id="whats-inside">
+    <p class="eyebrow kicker">01 · What's inside</p>
+    <h2>What's in this bank</h2>
+    <p class="sub">These aren't made-up practice prompts. They're real, high-performing UGC videos that brands actually paid for and ran.</p>
+
+    <div class="split">
+      <div class="block">
+        <h3>Canvas Examples</h3>
+        <p>Talking Heads, Text-On-Screens, Green Screens, Talking Head Demos and Silent Demos.</p>
+      </div>
+      <div class="block">
+        <h3>Traditional UGC Examples</h3>
+        <p>28 videos sorted by niche (beauty, body care, fragrance, fitness, beverages and loungewear) in styles like talking head, voiceover, trending audio and lifestyle.</p>
+      </div>
+    </div>
+
+    <h3 class="subhead">Why this gives you an edge</h3>
+    <ul class="points">
+      <li><strong>Your portfolio looks like real industry work.</strong> Most new creators fill their portfolios with random videos that don't look like anything brands actually run. Yours will look like you're an experienced creator.</li>
+      <li><strong>Hiring leads will recognize the style.</strong> The UGC world is small. Many brand and agency leads will know these campaigns and formats, so they might assume you've worked with brands before.</li>
+      <li><strong>You'll stand out from other beginners.</strong> While other new creators are still figuring out what a good UGC video looks like, you'll show up with a portfolio built on proven, high-engagement content.</li>
+    </ul>
+
+    <div class="rule-note">
+      <span class="eyebrow">One rule</span>
+      <p>If a brand asks if you were on those campaigns, be upfront. These are your own recreations of popular campaign formats (spec work), not gigs you were hired for. But it still shows you understand exactly what converts, and that's what gets you hired.</p>
+    </div>
+  </section>
+
+  <!-- 02 -->
+  <section id="how-it-works">
+    <p class="eyebrow kicker">02 · How it works</p>
+    <h2>How to use it</h2>
+    <p class="sub">Your assignment: replicate 8 videos in total. 4 from the Canvas section and 4 from the Traditional UGC section.</p>
+
+    <ol class="steps">
+      <li><span class="num">01.</span><div><h3>Read the filming guide</h3><p>Read the <a href="#filming-guide">Filming Guide</a> below before you start.</p></div></li>
+      <li><span class="num">02.</span><div><h3>Pick 4 Canvas videos</h3><p>Pick 4 example videos from the <a href="#canvas"><strong>Canvas Examples</strong></a> section.</p></div></li>
+      <li><span class="num">03.</span><div><h3>Pick 4 Traditional videos</h3><p>Pick 4 example videos from the <a href="#traditional"><strong>Traditional UGC Examples</strong></a> section.</p></div></li>
+      <li><span class="num">04.</span><div><h3>Watch them twice</h3><p>Watch each video you picked at least twice.</p></div></li>
+      <li><span class="num">05.</span><div><h3>Film your version</h3><p>Film your version of each one, matching the framing, pacing and style as closely as you can. Go line by line through the video script and try to recreate it exactly.</p></div></li>
+      <li><span class="num">06.</span><div><h3>Film in TikTok</h3><p>Recommendation: film all of your videos in the <strong>TikTok app</strong>. Use TikTok's camera, cuts, text and audio so your videos look and feel like real UGC. Then once it's finalized, save it to your camera roll by posting to "Only You."</p></div></li>
+      <li><span class="num">07.</span><div><h3>Build your portfolio</h3><p>Once all 8 videos are done, upload them to your portfolio using the <a href="https://academy.solaestudio.com/UGC-Portfolio-Templates" target="_blank" rel="noopener"><strong>UGC Portfolio Templates</strong></a>.</p></div></li>
+    </ol>
+  </section>
+
+  <!-- 03 -->
+  <section id="filming-guide">
+    <p class="eyebrow kicker">03 · Filming guide</p>
+    <h2>Before you film</h2>
+    <p class="sub">Two rules matter most: good lighting, and replicating the examples as closely as possible.</p>
+
+    <div class="split">
+      <div class="check-group block">
+        <h3>Filming</h3>
+        <ul class="checks">
+          <li>Face a window or a ring light so light falls on the front of your face.</li>
+          <li>Avoid having a bright window or lamp behind you so you're not backlit.</li>
+          <li>Check there are no harsh shadows on your face or the product.</li>
+          <li>Film a 5-second test clip and watch it back before recording the full take.</li>
+          <li>Talk normally like you're on FaceTime with a friend. Don't speak softly. Be clear and articulate.</li>
+          <li>Cut out the dead space, and follow the editing style of the example like captions, title, etc.</li>
+        </ul>
+      </div>
+      <div class="check-group block">
+        <h3>Replicate the examples</h3>
+        <ul class="checks">
+          <li>Match the framing: how close the camera is and where you sit in the shot.</li>
+          <li>Match the pacing: how fast the cuts and talking are.</li>
+          <li>Match the style: text placement, product angles and on-screen actions.</li>
+          <li>When unsure, re-watch the example and copy it rather than improvising.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 -->
+  <section id="canvas">
+    <p class="eyebrow kicker">04 · Canvas examples</p>
+    <h2>Canva / Tech UGC</h2>
+    <p class="sub">Canvas covers five formats. You are going to pick four of the five to recreate, so there will be one extra format left over.</p>
+    <p class="body-copy">Each format has 5 example videos to choose from. For each format, pick the example you can recreate the best.</p>
+    <nav class="jump" aria-label="Jump to"><span>Jump to</span><a href="#talking-heads">Talking Heads<b>5</b></a><a href="#text-on-screens">Text-On-Screens<b>5</b></a><a href="#green-screens">Green Screens<b>5</b></a><a href="#talking-head-demos">Talking Head Demos<b>5</b></a><a href="#silent-demos">Silent Demos<b>5</b></a></nav>
+    <div class="collection" id="talking-heads"><div class="coll-head"><span class="eyebrow">Format 01</span><h3>Talking Heads</h3><p>Pick one of the five examples below to recreate. You speak directly to camera, sharing your take on the product.</p></div><ul class="videos"><li><a class="vrow" href="https://drive.google.com/drive/folders/1DT6N8a56Z_cOnh7z_jatpKS5hm5BmLIZ?dmr=1&amp;ec=wgc-drive-%5Bmodule%5D-goto" target="_blank" rel="noopener"><span class="i">1</span><span class="t">Snag Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1_vgC080gSHuyRD3v3Kq4BFYpqpn_3dTS/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">2</span><span class="t">Cuffed Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1xV0xSO_fDYM3R5k3IuAMnOteeP2fvXPK/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">3</span><span class="t">Sprout Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1ETxeMI4vgOwe9xY774JiBIbte9XSBOCz/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">4</span><span class="t">Quizlet Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/drive/folders/1DT6N8a56Z_cOnh7z_jatpKS5hm5BmLIZ?dmr=1&amp;ec=wgc-drive-%5Bmodule%5D-goto" target="_blank" rel="noopener"><span class="i">5</span><span class="t">Teemdrop Example</span><span class="go">Watch ↗</span></a></li></ul></div><div class="collection" id="text-on-screens"><div class="coll-head"><span class="eyebrow">Format 02</span><h3>Text-On-Screens</h3><p>Pick one of the five examples below to recreate. The message is carried by on-screen text over simple footage.</p></div><ul class="videos"><li><a class="vrow" href="https://drive.google.com/file/d/1sK2OzVsF8Qrv_cEnbnm_ifiUZ3rI0-b_/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">1</span><span class="t">Once Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1RjQvV5WMncKP9iSVsCC-ObDBRbOctiaN/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">2</span><span class="t">Cuffed Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1l0sR4rcjydjpznPCXSgLcZYS80hNZZp7/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">3</span><span class="t">Lotus Health Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1e8xHEnBQW9Po_zXikvI2wNvBsoT7uLgu/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">4</span><span class="t">Money Niche Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1rKYf3TOpqxEnEtKob02eY_qWvsQHJGmn/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">5</span><span class="t">Teemdrop Example</span><span class="go">Watch ↗</span></a></li></ul></div><div class="collection" id="green-screens"><div class="coll-head"><span class="eyebrow">Format 03</span><h3>Green Screens</h3><p>Pick one of the five examples below to recreate. You appear in front of a background image or webpage and react to it. Each example comes with the image collateral to use as your background.</p></div><div class="gs"><div class="gs-row"><span class="i">1</span><span class="t">Once Example</span><a class="lnk" href="https://drive.google.com/file/d/1l9Sjr4ZayUfEZXwT8I0xgIsKu8rDHAym/view?usp=drivesdk" target="_blank" rel="noopener">Watch video ↗</a><a class="lnk" href="https://drive.google.com/drive/folders/1b3bzvdr9rpRajYx3jufvmMEOW_CVTBMX?usp=drive_link" target="_blank" rel="noopener">Once Images ↗</a></div><div class="gs-row"><span class="i">2</span><span class="t">Dropship IO Example</span><a class="lnk" href="https://drive.google.com/file/d/1inUQIwNRLWSPyJ-2xE-b9OwA5b9OVzLd/view?usp=drivesdk" target="_blank" rel="noopener">Watch video ↗</a><a class="lnk" href="https://drive.google.com/drive/folders/1DT6N8a56Z_cOnh7z_jatpKS5hm5BmLIZ" target="_blank" rel="noopener">Dropship IO Images ↗</a></div><div class="gs-row"><span class="i">3</span><span class="t">Open Art Example</span><a class="lnk" href="https://drive.google.com/file/d/1Gv7m7mM14AFLRmfuIMgKF6Xv1GJVw5wk/view?usp=drivesdk" target="_blank" rel="noopener">Watch video ↗</a><a class="lnk" href="https://drive.google.com/drive/folders/1RUwP61l9e_U7DaJjX2HrDRuKmIzcYGpX?usp=drive_link" target="_blank" rel="noopener">Open Art Images ↗</a></div><div class="gs-row"><span class="i">4</span><span class="t">Sauce Example</span><a class="lnk" href="https://drive.google.com/drive/folders/1DT6N8a56Z_cOnh7z_jatpKS5hm5BmLIZ?dmr=1&amp;ec=wgc-drive-%5Bmodule%5D-goto" target="_blank" rel="noopener">Watch video ↗</a><a class="lnk" href="https://drive.google.com/drive/folders/1vFLd-D_5PRhXJ2waDrCt1MKGpkmSkNjH?usp=drive_link" target="_blank" rel="noopener">Sauce Images ↗</a></div><div class="gs-row"><span class="i">5</span><span class="t">No Scroll Example</span><a class="lnk" href="https://drive.google.com/drive/folders/1DT6N8a56Z_cOnh7z_jatpKS5hm5BmLIZ?dmr=1&amp;ec=wgc-drive-%5Bmodule%5D-goto" target="_blank" rel="noopener">Watch video ↗</a><a class="lnk" href="https://drive.google.com/drive/folders/1JdNFlBkj2DpLpCj0WarSHjWlv_c0RHx2?usp=drive_link" target="_blank" rel="noopener">No Scroll Images ↗</a></div></div></div><div class="collection" id="talking-head-demos"><div class="coll-head"><span class="eyebrow">Format 04</span><h3>Talking Head Demos</h3><p>Pick one of the five examples below to recreate. You talk to camera while showing how the product works.</p></div><ul class="videos"><li><a class="vrow" href="https://drive.google.com/file/d/1EEXe3jjgV_SFzsHauM-OEpanHlCGi8VF/view" target="_blank" rel="noopener"><span class="i">1</span><span class="t">Cantina Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/19z3ZypIy8ekKcL7NcM_fMVjKpDtCqwWS/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">2</span><span class="t">The Wed Stay Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1vgpIZ2MRFIx7nfLAL7gX_i3Yk0LcLI4e/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">3</span><span class="t">Pagepilot Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1WkeDzNdaDNkRyE9iEsDpT9-Aa_on1Bhd/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">4</span><span class="t">Open Art Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1NstFL1iBo4RrI6Y7hOCqUA5uENY87TdT/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">5</span><span class="t">Dropship IO Example</span><span class="go">Watch ↗</span></a></li></ul></div><div class="collection" id="silent-demos"><div class="coll-head"><span class="eyebrow">Format 05</span><h3>Silent Demos</h3><p>Pick one of the five examples below to recreate. The product is shown in use with no talking, usually set to music or text.</p></div><ul class="videos"><li><a class="vrow" href="https://drive.google.com/file/d/1zJoJ_NrpLeohJG2qEi4hcuKYn2qYKNqP/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">1</span><span class="t">Once Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1SYr66UDXsogKSYkTnmBndEdFinvuaaCD/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">2</span><span class="t">Sprout Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1XQTY4gtCrPKOQCVEmsR4PRbUL8gvEZlo/view?usp=drivesdk" target="_blank" rel="noopener"><span class="i">3</span><span class="t">Dropship IO Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/drive/folders/1DT6N8a56Z_cOnh7z_jatpKS5hm5BmLIZ" target="_blank" rel="noopener"><span class="i">4</span><span class="t">Lovable Example</span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/drive/folders/1DT6N8a56Z_cOnh7z_jatpKS5hm5BmLIZ?dmr=1&amp;ec=wgc-drive-%5Bmodule%5D-goto" target="_blank" rel="noopener"><span class="i">5</span><span class="t">Canva Example</span><span class="go">Watch ↗</span></a></li></ul></div>
+  </section>
+
+  <!-- 05 -->
+  <section id="traditional">
+    <p class="eyebrow kicker">05 · Traditional UGC examples</p>
+    <h2>Traditional UGC</h2>
+    <p class="sub">Pick 4 videos from this section: 4 different products and ideally multiple video styles.</p>
+    <p class="body-copy">These examples use everyday products you likely already own. The videos are organized by niche below, so start with the niche that fits you best (beauty, fitness, wellness and so on).</p>
+
+    <ol class="steps">
+      <li><span class="num">01.</span><div><h3>Choose 4 products</h3><p>Choose 4 different products you already have at home, ideally ones that fit your niche interests.</p></div></li>
+      <li><span class="num">02.</span><div><h3>Mix your styles</h3><p>Try to do multiple video styles. For example one or two talking head, one voiceover, one trending audio, etc. Switching it up shows brands your range as a creator.</p></div></li>
+      <li><span class="num">03.</span><div><h3>Pick your videos</h3><p>Pick the videos you want to recreate from the examples below and choose based off the niche you want to position yourself in. Keep in mind the product you have at home will likely not be the exact product shown: if the example shows a perfume, use any perfume you own. The same goes for water bottles, workout sets, lip liners and every other category.</p></div></li>
+    </ol>
+
+    <h3 class="subhead">How to film them</h3>
+    <ul class="points">
+      <li><strong>Copy everything else exactly.</strong> Match the script, pacing, editing, cuts and camera angles as closely as you can. These are proven videos with high engagement.</li>
+      <li><strong>Swap only the product details.</strong> Whenever the script mentions the brand name, product name or features, change them to accurately describe the product you are showing.</li>
+      <li><strong>Two products in one video?</strong> If the example showcases multiple products in video, make sure all the products you show are from the same brand so it looks like a real sponsored video.</li>
+      <li><strong>Do this for all 4 videos.</strong></li>
+    </ul>
+    <nav class="jump" aria-label="Jump to"><span>Jump to</span><a href="#beauty">Beauty &amp; Skincare<b>5</b></a><a href="#body-care">Body Care<b>5</b></a><a href="#fragrance">Fragrance<b>4</b></a><a href="#fitness">Fitness &amp; Activewear<b>6</b></a><a href="#beverages">Beverages &amp; Supplements<b>6</b></a><a href="#loungewear">Loungewear<b>2</b></a></nav>
+    <div class="collection" id="beauty"><div class="coll-head"><span class="eyebrow">Niche 01</span><h3>Beauty &amp; Skincare</h3><p>Makeup, cleansers, sunscreen and hair care.</p></div><ul class="videos"><li><a class="vrow" href="https://drive.google.com/file/d/1EssXREUXyQByKEk7M6EIP4KBSSbY5YhT/view" target="_blank" rel="noopener"><span class="i">1</span><span class="t">Foundation Talking Head<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1vtgeLUuRu4RIxWcarHYkTcbcFOhNxlAK/view" target="_blank" rel="noopener"><span class="i">2</span><span class="t">Lip Liner Talking Head<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1nsuy7nYL50Mz2OIz72uzdnsrPhuATeru/view" target="_blank" rel="noopener"><span class="i">3</span><span class="t">Face Wash and Moisturizer Duo Voiceover<span class="tag">Voiceover</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1Fbv1giHcZVjMCmeGY1hhmw80N2Gb9gUo/view" target="_blank" rel="noopener"><span class="i">4</span><span class="t">Sunscreen Voiceover<span class="tag">Voiceover</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1diN5vqGqL5hJggoFfOp6rYaD16thIKyx/view" target="_blank" rel="noopener"><span class="i">5</span><span class="t">Shampoo Voiceover<span class="tag">Voiceover</span></span><span class="go">Watch ↗</span></a></li></ul></div><div class="collection" id="body-care"><div class="coll-head"><span class="eyebrow">Niche 02</span><h3>Body Care</h3><p>Body products, lotions and moisturizers.</p></div><ul class="videos"><li><a class="vrow" href="https://drive.google.com/file/d/11GneoPyWMygmPb3RrnkvIBPlFooELlXF/view" target="_blank" rel="noopener"><span class="i">1</span><span class="t">Cyklar Body Product Talking Head<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1fOv51CGY98ni0NQZgSlnnq8K0cb95siZ/view" target="_blank" rel="noopener"><span class="i">2</span><span class="t">Cyklar Body Product Talking Head Example 2<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/192ub71oXbLNdaKcWn45OqeU1TvMAzgma/view" target="_blank" rel="noopener"><span class="i">3</span><span class="t">Cyklar Body Product Trending Audio<span class="tag">Trending Audio</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1jz5xALhHdgZd4bQj8KmI3WTots-ULSF_/view" target="_blank" rel="noopener"><span class="i">4</span><span class="t">Kopari Body Product Trending Audio<span class="tag">Trending Audio</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1Zl0N_JUgoDSKndSLANcMUysnShN1Rk91/view" target="_blank" rel="noopener"><span class="i">5</span><span class="t">Lotion Unboxing Trending Audio<span class="tag">Unboxing / Trending Audio</span></span><span class="go">Watch ↗</span></a></li></ul></div><div class="collection" id="fragrance"><div class="coll-head"><span class="eyebrow">Niche 03</span><h3>Fragrance</h3><p>Any perfume or body mist you own.</p></div><ul class="videos"><li><a class="vrow" href="https://drive.google.com/file/d/1jxVZENEh6ncIhPfYs3r1xRfCNm2X7MhC/view" target="_blank" rel="noopener"><span class="i">1</span><span class="t">Perfume Talking Head<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1hqxaJ8MTaj--YGmhYFazToESELFx81vG/view" target="_blank" rel="noopener"><span class="i">2</span><span class="t">Perfume Talking Head Example 2<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1yfisqoGLs3FXyNwol6mB4t-ItEsuwhqN/view" target="_blank" rel="noopener"><span class="i">3</span><span class="t">Perfume Trending Audio<span class="tag">Trending Audio</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1obsF2wGX8ceivB3gUDE9T5J_bOYmAMVz/view" target="_blank" rel="noopener"><span class="i">4</span><span class="t">Perfume Trending Audio Example 2<span class="tag">Trending Audio</span></span><span class="go">Watch ↗</span></a></li></ul></div><div class="collection" id="fitness"><div class="coll-head"><span class="eyebrow">Niche 04</span><h3>Fitness &amp; Activewear</h3><p>Workout sets, water bottles and running shoes.</p></div><ul class="videos"><li><a class="vrow" href="https://drive.google.com/file/d/14VGtcS7v4JUWaA3rQkrz5lKd5UfDR32o/view" target="_blank" rel="noopener"><span class="i">1</span><span class="t">Workout Set Talking Head<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1pV07L7duyHtDOc-aH8P-wmBa4-GR7CTl/view" target="_blank" rel="noopener"><span class="i">2</span><span class="t">Workout Set Talking Head Example 2<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1FcD-EQTusYQH6w-FAX2oB2poqhR5KXk2/view" target="_blank" rel="noopener"><span class="i">3</span><span class="t">Water Bottle Talking Head<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1XoaE3k3f9WovxcdC5dYAaKv_-wa_dx3W/view" target="_blank" rel="noopener"><span class="i">4</span><span class="t">Water Bottle Talking Head Example 2<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1Gyd9Cw_o82dx3mNlPI5QmETdciz0FwpC/view" target="_blank" rel="noopener"><span class="i">5</span><span class="t">Water Bottle Talking Head Example 3<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1mn0bW-ZufJ2YWp2j9SYi3Lh-q6Ow5bDe/view" target="_blank" rel="noopener"><span class="i">6</span><span class="t">Running Shoes Voiceover<span class="tag">Voiceover</span></span><span class="go">Watch ↗</span></a></li></ul></div><div class="collection" id="beverages"><div class="coll-head"><span class="eyebrow">Niche 05</span><h3>Beverages &amp; Supplements</h3><p>Drinks, electrolytes and protein powder.</p></div><ul class="videos"><li><a class="vrow" href="https://drive.google.com/file/d/1Vgr8mxTPbsiMyEigFmQatR8Sqjmh79ed/view" target="_blank" rel="noopener"><span class="i">1</span><span class="t">Beverage Talking Head Example<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1CEUX6YMFJcpzU1yjEc72dSmYCfK2AcKu/view" target="_blank" rel="noopener"><span class="i">2</span><span class="t">Beverage Talking Head Example 2<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1jDi6Z-N2-rt-K26Kwexmvo9Xkd8xkexX/view" target="_blank" rel="noopener"><span class="i">3</span><span class="t">Beverage Trending Audio Example 3<span class="tag">Trending Audio</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/17HnvrF-8ae4b6qTWgYfw2mx4p7p_IG1e/view" target="_blank" rel="noopener"><span class="i">4</span><span class="t">Electrolytes Talking Head<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1WeM1MzI7PGBktdkFXJlC7-fjVOYjMzkP/view" target="_blank" rel="noopener"><span class="i">5</span><span class="t">Electrolytes Voiceover<span class="tag">Voiceover</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/1l5aBlnLzXEYxOqSw4i94BkD665ANVYJr/view" target="_blank" rel="noopener"><span class="i">6</span><span class="t">Bloom Protein Powder Lifestyle<span class="tag">Lifestyle</span></span><span class="go">Watch ↗</span></a></li></ul></div><div class="collection" id="loungewear"><div class="coll-head"><span class="eyebrow">Niche 06</span><h3>Loungewear</h3><p>Robes and cozy at-home pieces.</p></div><ul class="videos"><li><a class="vrow" href="https://drive.google.com/file/d/1sdfP5wSMY-9FMjS6-d4LKI7fjCCh3i4p/view" target="_blank" rel="noopener"><span class="i">1</span><span class="t">Robe Talking Head<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li><li><a class="vrow" href="https://drive.google.com/file/d/15ro87BwECttwSQCcc-LZfhKX8l9q9Lre/view" target="_blank" rel="noopener"><span class="i">2</span><span class="t">Robe Talking Head Example 2<span class="tag">Talking Head</span></span><span class="go">Watch ↗</span></a></li></ul></div>
+  </section>
+
+  <div class="cta">
+    <p class="eyebrow kicker">Next step</p>
+    <h2>Build your portfolio</h2>
+    <p class="sub">Once all 8 videos are done, upload them to your portfolio.</p>
+    <a class="btn" href="https://academy.solaestudio.com/UGC-Portfolio-Templates" target="_blank" rel="noopener">UGC Portfolio Templates <span aria-hidden="true">→</span></a>
+  </div>
+
+  <footer>
+    <img src="/UGC-Content-Bank/img/logo-ss.png" alt="Solae Studio monogram">
+    <span>Solae Studio Academy</span>
+  </footer>
+</div>
+
+</body>
+</html>
